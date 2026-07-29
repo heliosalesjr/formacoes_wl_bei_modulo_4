@@ -31,12 +31,12 @@ export default function HeroBento({
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
 
           {/* ── Cell 1: Title ── col 1-3, row 1-2 */}
-          <div className="group relative md:col-span-3 md:row-span-2 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 p-7 flex flex-col justify-between min-h-[200px] transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/40">
+          <div className="group relative md:col-span-3 md:row-span-2 rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-600 via-emerald-700 to-emerald-900 p-7 flex flex-col justify-between min-h-[200px] transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-500/40">
             {/* Decorative circles */}
             <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/10 pointer-events-none animate-float-slow-a transition-colors duration-500 group-hover:bg-white/20" />
             <div className="absolute bottom-4 left-4 w-24 h-24 rounded-full bg-white/10 pointer-events-none animate-float-slow-b transition-colors duration-500 group-hover:bg-white/20" />
             {/* Soft glow blob */}
-            <div className="absolute top-1/3 left-1/2 w-56 h-56 -translate-x-1/2 rounded-full bg-blue-300 blur-3xl pointer-events-none animate-glow-pulse transition-transform duration-700 group-hover:scale-125" />
+            <div className="absolute top-1/3 left-1/2 w-56 h-56 -translate-x-1/2 rounded-full bg-emerald-300 blur-3xl pointer-events-none animate-glow-pulse transition-transform duration-700 group-hover:scale-125" />
             {/* Dot grid ornament */}
             <div
               className="absolute inset-0 opacity-15 pointer-events-none animate-drift-grid transition-opacity duration-500 group-hover:opacity-25"
@@ -49,14 +49,14 @@ export default function HeroBento({
 
             {/* Tag above title */}
             {tag && (
-              <span className="relative z-10 inline-block text-xs font-semibold tracking-widest uppercase text-blue-200 bg-white/10 border border-white/20 rounded-full px-3 py-1 w-fit mb-3">
+              <span className="relative z-10 inline-block text-xs font-semibold tracking-widest uppercase text-emerald-200 bg-white/10 border border-white/20 rounded-full px-3 py-1 w-fit mb-3">
                 {tag}
               </span>
             )}
 
             {/* Eyebrow */}
             {eyebrow && (
-              <span className="relative z-10 block text-xs sm:text-sm font-medium uppercase tracking-widest text-blue-200/70 mb-1">
+              <span className="relative z-10 block text-xs sm:text-sm font-medium uppercase tracking-widest text-emerald-200/70 mb-1">
                 {eyebrow}
               </span>
             )}
@@ -100,7 +100,7 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 3: Stat ── col 4, row 2 (hidden on mobile) */}
-          <div className="hidden md:block relative md:col-span-1 md:row-span-1 aspect-square rounded-2xl bg-emerald-500 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-400/50">
+          <div className="hidden md:block relative md:col-span-1 md:row-span-1 aspect-square rounded-2xl bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/40">
             <div className="absolute inset-[10%]">
               <Image
                 src="/ald.png"
@@ -125,7 +125,7 @@ export default function HeroBento({
           </div>
 
           {/* ── Cell 5: Image ── col 3, row 3 */}
-          <div className="group md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden relative min-h-[100px] bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-800 flex items-center justify-center transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/50">
+          <div className="group md:col-span-1 md:row-span-1 rounded-2xl overflow-hidden relative min-h-[100px] bg-orange-500 flex items-center justify-center transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-orange-400/50">
             <div className="relative w-3/5 h-3/5 transition-transform duration-500 group-hover:scale-110">
               <Image
                 src="/trio.png"
