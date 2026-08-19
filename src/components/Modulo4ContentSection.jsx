@@ -3,6 +3,7 @@ import Link from "next/link"
 import PageApresentacao1 from "@/components/content/PageApresentacao1"
 import PageMonitorarAvaliar from "@/components/content/PageMonitorarAvaliar"
 import PageApresentacao2 from "@/components/content/PageApresentacao2"
+import PageOndeEstamos from "@/components/content/PageOndeEstamos"
 
 export default function Modulo4ContentSection() {
   return (
@@ -12,6 +13,7 @@ export default function Modulo4ContentSection() {
 
           <PageApresentacao1 />
           <PageMonitorarAvaliar />
+          <PageOndeEstamos />
           <PageApresentacao2 />
 
           <div className="flex justify-center mt-8">
