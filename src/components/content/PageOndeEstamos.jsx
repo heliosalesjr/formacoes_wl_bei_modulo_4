@@ -17,7 +17,7 @@ const accordionItems = [
     title: 'Revisitar os objetivos lá do começo',
     content: (
       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-        Vale reler com a turma aquilo que foi planejado no início: o que a gente queria entender, investigar ou transformar? Isso ajuda os estudantes a perceberem o quanto caminharam e a reconhecer o que foi construído, mesmo que parte do projeto tenha mudado de rumo no caminho.
+        Vale reler com a turma aquilo que foi planejado no início: <strong>o que a gente queria entender, investigar ou transformar?</strong> Isso ajuda os estudantes a perceberem <strong>o quanto caminharam</strong> e a reconhecer <strong>o que foi construído</strong>, mesmo que parte do projeto tenha mudado de rumo no caminho.
       </p>
     ),
   },
@@ -32,7 +32,7 @@ const accordionItems = [
     content: (
       <div className="space-y-3">
         <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-          Em vez de algo genérico, proponha perguntas mais diretas, que façam sentido para a idade e para o grupo. Pode ser no caderno, em um formulário, ou até oralmente:
+          Em vez de algo genérico, proponha <strong>perguntas mais diretas</strong>, que façam sentido para a idade e para o grupo. Pode ser no caderno, em um formulário, ou até oralmente:
         </p>
         <ul className="space-y-2 pl-2">
           {['"O que eu aprendi nesse projeto?"', '"Como eu ajudei meu grupo?"', '"Qual foi o meu maior desafio?"'].map((q) => (
@@ -55,7 +55,7 @@ const accordionItems = [
     title: 'Avaliar em grupo também ajuda',
     content: (
       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-        Estimule que os estudantes conversem sobre como foi trabalhar juntos(as), o que funcionou bem, o que gerou conflitos, como se organizaram. Isso pode acontecer em rodas de conversa, em murais de feedback ou até por meio de bilhetes escritos entre colegas.
+        Estimule que os estudantes conversem sobre como foi trabalhar juntos(as), o que funcionou bem, o que gerou conflitos, como se organizaram. Isso pode acontecer em <strong>rodas de conversa</strong>, em <strong>murais de feedback</strong> ou até por meio de <strong>bilhetes escritos entre colegas</strong>.
       </p>
     ),
   },
@@ -69,7 +69,7 @@ const accordionItems = [
     title: 'Promova uma conversa com a turma toda',
     content: (
       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-        É um bom momento para escutar o que eles e elas sentiram ao longo do projeto. Perguntas como <span className="italic">"O que foi mais difícil?"</span>, <span className="italic">"O que surpreendeu?"</span>, <span className="italic">"O que pode melhorar nos próximos projetos?"</span> ajudam a turma a elaborar o que viveu — e também trazem bons insights para o(a) professor(a).
+        É um bom momento para <strong>escutar o que eles e elas sentiram</strong> ao longo do projeto. Perguntas como <span className="italic">"O que foi mais difícil?"</span>, <span className="italic">"O que surpreendeu?"</span>, <span className="italic">"O que pode melhorar nos próximos projetos?"</span> ajudam a turma a <strong>elaborar o que viveu</strong> — e também trazem <strong>bons insights</strong> para o(a) professor(a).
       </p>
     ),
   },
@@ -83,7 +83,7 @@ const accordionItems = [
     title: 'Organizem uma culminância com cara de fechamento',
     content: (
       <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-        Isso não precisa ser algo grandioso. Pode ser um mural na escola, uma conversa com outra turma, uma apresentação breve para os responsáveis ou um post no Padlet. A ideia é dar visibilidade ao que foi feito e marcar que aquele processo teve começo, meio e fim.
+        Isso não precisa ser algo grandioso. Pode ser um <strong>mural na escola</strong>, uma <strong>conversa com outra turma</strong>, uma <strong>apresentação breve para os responsáveis</strong> ou um <strong>post no Padlet</strong>. A ideia é <strong>dar visibilidade ao que foi feito</strong> e marcar que aquele processo teve <strong>começo, meio e fim</strong>.
       </p>
     ),
   },
@@ -178,7 +178,7 @@ export default function PageOndeEstamos() {
             </h3>
           </div>
           <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed pl-4">
-            Chegando nessa etapa final, é crucial ter esse momento de reflexão, para que a turma tenha esse espaço de olhar para o que foi feito e pensar sobre o que ficou de aprendizado disso tudo. Algumas ações simples, mas significativas, ajudam bastante nesse processo:
+            Chegando nessa etapa final, é crucial ter esse <strong>momento de reflexão</strong>, para que a turma tenha esse espaço de <strong>olhar para o que foi feito</strong> e pensar sobre <strong>o que ficou de aprendizado</strong> disso tudo. Algumas <strong>ações simples, mas significativas</strong>, ajudam bastante nesse processo:
           </p>
         </motion.div>
 
