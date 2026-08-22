@@ -14,7 +14,7 @@ const steps = [
       "Sarau, painel de ideias, roda de perguntas.",
       "Gravação de vídeos com depoimentos ou simulações.",
     ],
-    extra: "Não existe uma "forma certa" — o ideal é escolher um formato que seja viável no seu contexto e que permita que a turma se reconheça no que está apresentando.",
+    extra: 'Não existe uma "forma certa" — o ideal é escolher um formato que seja viável no seu contexto e que permita que a turma se reconheça no que está apresentando.',
   },
   {
     num: "2",
