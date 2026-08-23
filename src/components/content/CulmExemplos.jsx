@@ -14,8 +14,12 @@ const exemplos = [
     title: 'Feira do consumo consciente',
     titleColor: 'text-blue-700 dark:text-blue-400',
     img: '/sustentabilidade.jpg',
-    intro: 'Professores organizaram com os estudantes uma feira com estandes temáticos sobre consumo, publicidade e sustentabilidade. Cada grupo apresentou:',
-    bullets: ['um problema pesquisado (ex: consumismo na moda),', 'os dados que levantaram,', 'e uma proposta de solução ou conscientização.'],
+    intro: <>Professores organizaram com os estudantes uma <strong>feira</strong> com estandes temáticos sobre <strong>consumo, publicidade e sustentabilidade</strong>. Cada grupo apresentou:</>,
+    bullets: [
+      <>um <strong>problema pesquisado</strong> (ex: consumismo na moda),</>,
+      <>os <strong>dados</strong> que levantaram,</>,
+      <>e uma <strong>proposta de solução ou conscientização</strong>.</>,
+    ],
     bulletColor: 'text-blue-600 dark:text-blue-400',
     bulletBg: 'bg-blue-50 dark:bg-blue-950/40 border-blue-100 dark:border-blue-800',
     reflexBg: 'bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-800 border-blue-200 dark:border-slate-700',
@@ -27,30 +31,30 @@ const exemplos = [
     subetapas: [
       {
         titulo: '1.1. Roda de conversa:',
-        intro: 'Em sala de aula, os professores conduziram uma roda de conversa com perguntas disparadoras como:',
+        intro: <>Em sala de aula, os professores conduziram uma <strong>roda de conversa</strong> com <strong>perguntas disparadoras</strong> como:</>,
         perguntas: [
           '– O que mais te surpreendeu durante a preparação da feira?',
           '– Que tipo de dúvida ou comentário os visitantes trouxeram?',
           '– Você mudou de opinião sobre algum tema após ver o estande de outro grupo?',
         ],
-        nota: 'Essa roda favorece a escuta ativa, a valorização do protagonismo dos colegas e o exercício da argumentação.',
+        nota: <>Essa roda favorece a <strong>escuta ativa</strong>, a valorização do <strong>protagonismo dos colegas</strong> e o exercício da <strong>argumentação</strong>.</>,
       },
       {
         titulo: '1.2. Produção escrita individual ou em dupla:',
-        intro: 'Depois, os alunos foram convidados a escrever um breve texto reflexivo com base em perguntas orientadoras, como:',
+        intro: <>Depois, os alunos foram convidados a escrever um <strong>texto reflexivo</strong> com base em <strong>perguntas orientadoras</strong>, como:</>,
         perguntas: [
           '– Qual foi sua maior dificuldade e maior aprendizado nesse processo?',
           '– O que faria diferente se fosse repetir essa atividade?',
           '– De que forma essa pesquisa se conecta com sua vida cotidiana?',
         ],
-        nota: 'Essa escrita pode assumir o formato de relato de experiência, carta aberta ou parágrafo reflexivo.',
+        nota: <>Essa escrita pode assumir o formato de <strong>relato de experiência</strong>, <strong>carta aberta</strong> ou <strong>parágrafo reflexivo</strong>.</>,
       },
       {
         titulo: '1.3. Socialização e síntese coletiva:',
-        texto: 'Após a produção individual, a turma pôde montar um painel/mural com trechos dos textos, frases de impacto ou destaques das rodas de conversa — uma etapa crucial que ajudou os alunos a reconhecerem padrões de pensamento e fortalece a ideia de construção conjunta do conhecimento.',
+        texto: <>Após a produção individual, a turma pôde montar um <strong>painel/mural</strong> com trechos dos textos, frases de impacto ou destaques das rodas de conversa — uma etapa crucial que ajudou os alunos a reconhecerem <strong>padrões de pensamento</strong> e fortalece a ideia de <strong>construção conjunta do conhecimento</strong>.</>,
       },
     ],
-    quote: 'Criou um espaço de troca entre estudantes e visitantes que valorizou o processo de aprendizagem e incentivou a escuta ativa, a oralidade e o senso de responsabilidade coletiva.',
+    quote: <>Criou um <strong>espaço de troca</strong> entre estudantes e visitantes que valorizou o <strong>processo de aprendizagem</strong> e incentivou a <strong>escuta ativa</strong>, a <strong>oralidade</strong> e o senso de <strong>responsabilidade coletiva</strong>.</>,
   },
   {
     value: 'item-2',
@@ -59,11 +63,15 @@ const exemplos = [
     title: 'Exposição de cartazes e infográficos',
     titleColor: 'text-green-700 dark:text-green-400',
     img: '/cartazes.png',
-    intro: 'Algumas turmas montaram uma exposição com cartazes feitos em grupo sobre temas como:',
-    bullets: ['propaganda infantil,', 'diferença entre desejo e necessidade,', 'impactos do endividamento.'],
+    intro: <>Algumas turmas montaram uma <strong>exposição</strong> com <strong>cartazes feitos em grupo</strong> sobre temas como:</>,
+    bullets: [
+      <><strong>propaganda infantil</strong>,</>,
+      <><strong>diferença entre desejo e necessidade</strong>,</>,
+      <><strong>impactos do endividamento</strong>.</>,
+    ],
     bulletColor: 'text-green-600 dark:text-green-400',
     bulletBg: 'bg-green-50 dark:bg-green-950/40 border-green-100 dark:border-green-800',
-    extraText: 'A mostra ficou aberta na escola por uma semana, e cada grupo ficou responsável por apresentar seu tema para os visitantes durante um recreio.',
+    extraText: <>A mostra ficou <strong>aberta na escola por uma semana</strong>, e cada grupo ficou responsável por <strong>apresentar seu tema</strong> para os visitantes durante um recreio.</>,
     reflexBg: 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-800 border-green-200 dark:border-slate-700',
     reflexTitle: 'text-emerald-800 dark:text-emerald-300',
     subBorder: 'border-emerald-100 dark:border-emerald-900',
@@ -73,7 +81,7 @@ const exemplos = [
     subetapas: [
       {
         titulo: '2.1. Roda de conversa:',
-        intro: 'As turmas participaram de uma roda de conversa mediada pelos professores, com perguntas disparadoras como:',
+        intro: <>As turmas participaram de uma <strong>roda de conversa</strong> mediada pelos professores, com perguntas disparadoras como:</>,
         perguntas: [
           '– O que mais chamou sua atenção enquanto pesquisavam e montavam o cartaz?',
           '– Foi difícil explicar o tema para os colegas?',
@@ -83,16 +91,16 @@ const exemplos = [
       },
       {
         titulo: '2.2. Registro escrito individual ou coletivo:',
-        intro: 'Após a roda de conversa, os estudantes realizaram registros escritos. Cada turma optou por formatos diferentes, como:',
+        intro: <>Após a roda de conversa, os estudantes realizaram <strong>registros escritos</strong>. Cada turma optou por formatos diferentes, como:</>,
         perguntas: [
           '– relatos individuais sobre o que aprenderam e como se sentiram ao participar da mostra;',
           '– autoavaliações em grupo, refletindo sobre a colaboração entre os colegas;',
           '– ou textos opinativos avaliando o impacto da ação na escola.',
         ],
-        nota: 'Esses registros serviram tanto como instrumento de avaliação quanto como forma de os alunos se apropriarem do percurso vivido, reconhecendo a importância de discutir temas sociais de maneira crítica e criativa dentro da escola.',
+        nota: <>Esses registros serviram tanto como <strong>instrumento de avaliação</strong> quanto como forma de os alunos se apropriarem do <strong>percurso vivido</strong>, reconhecendo a importância de discutir <strong>temas sociais</strong> de maneira <strong>crítica e criativa</strong> dentro da escola.</>,
       },
     ],
-    quote: 'Favoreceu a organização das ideias e a comunicação visual, ao exigir que os alunos selecionassem, sintetizassem e explicassem os conteúdos de forma acessível e coerente.',
+    quote: <>Favoreceu a <strong>organização das ideias</strong> e a <strong>comunicação visual</strong>, ao exigir que os alunos selecionassem, sintetizassem e explicassem os conteúdos de forma <strong>acessível e coerente</strong>.</>,
   },
   {
     value: 'item-3',
@@ -101,13 +109,17 @@ const exemplos = [
     title: 'Roda de conversa com a comunidade escolar',
     titleColor: 'text-violet-700 dark:text-violet-400',
     img: '/dialogo.png',
-    intro: 'Alguns professores convidaram os familiares dos estudantes para uma roda de conversa onde cada aluno compartilhou:',
-    bullets: ['algo que aprendeu;', 'como isso mudou seus hábitos em casa;', 'o que ainda tem dúvidas sobre o tema.'],
+    intro: <>Alguns professores convidaram os <strong>familiares dos estudantes</strong> para uma <strong>roda de conversa</strong> onde cada aluno compartilhou:</>,
+    bullets: [
+      <>algo que <strong>aprendeu</strong>;</>,
+      <>como isso <strong>mudou seus hábitos em casa</strong>;</>,
+      <>o que ainda tem <strong>dúvidas</strong> sobre o tema.</>,
+    ],
     bulletColor: 'text-violet-600 dark:text-violet-400',
     bulletBg: 'bg-violet-50 dark:bg-violet-950/40 border-violet-100 dark:border-violet-800',
     quoteColor: 'border-violet-500',
     quoteBg: 'bg-violet-50 dark:bg-violet-950/30',
-    quote: 'Fortaleceu o vínculo entre família e escola, ao abrir espaço para diálogo, acolhimento e reflexão conjunta sobre práticas de consumo no cotidiano.',
+    quote: <>Fortaleceu o <strong>vínculo entre família e escola</strong>, ao abrir espaço para <strong>diálogo, acolhimento e reflexão conjunta</strong> sobre <strong>práticas de consumo</strong> no cotidiano.</>,
   },
   {
     value: 'item-4',
@@ -116,8 +128,12 @@ const exemplos = [
     title: 'Simulação de escolhas financeiras',
     titleColor: 'text-orange-700 dark:text-orange-400',
     img: '/simula.png',
-    intro: 'Em uma escola rural, a culminância foi a realização de uma simulação prática. Cada grupo recebeu um "orçamento" fictício e precisou tomar decisões com base em uma planilha. Depois, apresentaram:',
-    bullets: ['o que escolheram priorizar;', 'em qual parte tiveram dificuldade;', 'e como equilibraram os desejos e as necessidades.'],
+    intro: <>Em uma escola rural, a culminância foi a realização de uma <strong>simulação prática</strong>. Cada grupo recebeu um <strong>"orçamento" fictício</strong> e precisou <strong>tomar decisões</strong> com base em uma planilha. Depois, apresentaram:</>,
+    bullets: [
+      <>o que escolheram <strong>priorizar</strong>;</>,
+      <>em qual parte tiveram <strong>dificuldade</strong>;</>,
+      <>e como <strong>equilibraram os desejos e as necessidades</strong>.</>,
+    ],
     bulletColor: 'text-orange-600 dark:text-orange-400',
     bulletBg: 'bg-orange-50 dark:bg-orange-950/40 border-orange-100 dark:border-orange-800',
     reflexBg: 'bg-gradient-to-r from-orange-50 to-red-50 dark:from-slate-800 dark:to-slate-800 border-orange-200 dark:border-slate-700',
@@ -128,17 +144,17 @@ const exemplos = [
     quoteBg: 'bg-orange-50 dark:bg-orange-950/30',
     subetapas: [
       {
+        intro: <>Após a simulação, o professor conduziu uma <strong>roda de conversa</strong> com <strong>perguntas orientadoras</strong>:</>,
         perguntas: [
           '– Quais escolhas foram mais difíceis de tomar?',
           '– Em algum momento o grupo discordou sobre o que era mais importante? Como resolveram?',
           '– Se pudessem refazer as escolhas, mudariam alguma coisa? Por quê?',
           '– O que essa atividade nos ensinou sobre a diferença entre desejo e necessidade?',
         ],
-        intro: 'Após a simulação, o professor conduziu uma roda de conversa com perguntas orientadoras:',
-        nota: 'A discussão permitiu que os estudantes percebessem os impactos de suas decisões, identificassem padrões de consumo e reconhecessem a importância do planejamento financeiro.',
+        nota: <>A discussão permitiu que os estudantes percebessem os <strong>impactos de suas decisões</strong>, identificassem <strong>padrões de consumo</strong> e reconhecessem a importância do <strong>planejamento financeiro</strong>.</>,
       },
     ],
-    quote: 'Permitiu que os estudantes colocassem em prática conhecimentos discutidos em sala, exercitando o pensamento crítico diante de situações reais de decisão.',
+    quote: <>Permitiu que os estudantes <strong>colocassem em prática</strong> conhecimentos discutidos em sala, exercitando o <strong>pensamento crítico</strong> diante de <strong>situações reais de decisão</strong>.</>,
   },
 ];
 
@@ -226,8 +242,8 @@ const CulmExemplos = () => {
                       <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{intro}</p>
 
                       <div className={`rounded-xl p-4 border space-y-2 ${bulletBg}`}>
-                        {bullets.map((b) => (
-                          <div key={b} className="flex items-start gap-2">
+                        {bullets.map((b, i) => (
+                          <div key={i} className="flex items-start gap-2">
                             <span className={`font-bold mt-0.5 ${bulletColor}`}>•</span>
                             <p className="text-slate-700 dark:text-slate-300">{b}</p>
                           </div>

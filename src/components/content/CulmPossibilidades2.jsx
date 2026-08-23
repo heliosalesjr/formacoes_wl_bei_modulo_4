@@ -13,10 +13,10 @@ const possibilidades = [
     label: "Portfólio",
     titleColor: "text-blue-700 dark:text-blue-400",
     content: [
-      "Criar um portfólio com os registros do projeto — físico ou digital.",
-      "Um portfólio é uma coleção organizada de trabalhos que demonstra o processo e os resultados alcançados ao longo do projeto. Pode incluir fotografias, documentos, relatórios, desenhos, gráficos e outras evidências do desenvolvimento.",
-      "Se físico, pode ser apresentado em pastas, caixas ou painéis. Se digital, pode ser criado em plataformas como Google Sites, Wix ou Canva, permitindo maior alcance e facilidade de compartilhamento.",
-      "O portfólio não apenas registra o resultado final, mas documenta toda a jornada de aprendizagem, mostrando desafios enfrentados, soluções encontradas e evolução do pensamento crítico dos estudantes.",
+      <>Criar um portfólio com os <strong>registros do projeto</strong> — físico ou digital.</>,
+      <>Um portfólio é uma <strong>coleção organizada de trabalhos</strong> que demonstra o <strong>processo e os resultados alcançados</strong> ao longo do projeto. Pode incluir <strong>fotografias, documentos, relatórios, desenhos e gráficos</strong> e outras evidências do desenvolvimento.</>,
+      <>Se físico, pode ser apresentado em pastas, caixas ou painéis. Se digital, pode ser criado em plataformas como <strong>Google Sites, Wix ou Canva</strong>, permitindo maior alcance e facilidade de compartilhamento.</>,
+      <>O portfólio não apenas registra o resultado final, mas documenta toda a <strong>jornada de aprendizagem</strong>, mostrando desafios enfrentados, soluções encontradas e evolução do <strong>pensamento crítico</strong> dos estudantes.</>,
     ],
   },
   {
@@ -26,9 +26,9 @@ const possibilidades = [
     label: "Evento",
     titleColor: "text-emerald-700 dark:text-emerald-400",
     content: [
-      "Celebração da conclusão em um evento que apresente o projeto, podendo incluir depoimentos orais, imagens e vídeos para a comunidade escolar.",
-      "Um evento de culminância pode ser organizado como uma apresentação formal, um seminário, uma mostra interativa ou uma festa comemorativa. Pode incluir depoimentos, exibição de vídeos, apresentações visuais e até dramatizações.",
-      "A presença da comunidade escolar amplia o impacto e valoriza o trabalho realizado, podendo incluir espaços interativos e experiências práticas relacionadas ao projeto.",
+      <>Celebração da conclusão em um <strong>evento</strong> que apresente o projeto, podendo incluir <strong>depoimentos orais, imagens e vídeos</strong> para a comunidade escolar.</>,
+      <>Um evento de culminância pode ser organizado como uma <strong>apresentação formal, um seminário, uma mostra interativa</strong> ou uma festa comemorativa. Pode incluir <strong>depoimentos, exibição de vídeos e apresentações visuais</strong> e até dramatizações.</>,
+      <>A presença da <strong>comunidade escolar</strong> amplia o impacto e valoriza o trabalho realizado, podendo incluir <strong>espaços interativos</strong> e experiências práticas relacionadas ao projeto.</>,
     ],
   },
   {
@@ -38,9 +38,9 @@ const possibilidades = [
     label: "Mostra de Vídeos ou Produções Digitais",
     titleColor: "text-violet-700 dark:text-violet-400",
     content: [
-      "Criação de uma mostra com registros em imagens ou produções audiovisuais do desenvolvimento do projeto.",
-      "Uma mostra pode incluir documentários curtos, entrevistas, time-lapses, animações, podcasts e materiais para redes sociais.",
-      "Esses materiais podem ser exibidos presencialmente, em plataformas online ou em blogs. Desenvolvem habilidades de comunicação, edição e pensamento crítico.",
+      <>Criação de uma mostra com <strong>registros em imagens ou produções audiovisuais</strong> do desenvolvimento do projeto.</>,
+      <>Uma mostra pode incluir <strong>documentários curtos, entrevistas, time-lapses, animações e podcasts</strong> e materiais para redes sociais.</>,
+      <>Esses materiais podem ser exibidos <strong>presencialmente, em plataformas online ou em blogs</strong>. Desenvolvem habilidades de <strong>comunicação, edição e pensamento crítico</strong>.</>,
     ],
   },
   {
@@ -50,9 +50,9 @@ const possibilidades = [
     label: "Sites e Redes Sociais",
     titleColor: "text-orange-700 dark:text-orange-400",
     content: [
-      "A divulgação em sites e redes sociais amplia o alcance da culminância, com posts, vídeos e notícias no site institucional.",
-      "Cada plataforma tem sua força: redes sociais para engajamento, sites para credibilidade. Conteúdos com fotos, vídeos curtos e depoimentos são essenciais.",
-      "Essa estratégia fortalece a conexão entre escola, comunidade e a iniciativa do projeto.",
+      <>A divulgação em <strong>sites e redes sociais</strong> amplia o alcance da culminância, com <strong>posts, vídeos e notícias</strong> no site institucional.</>,
+      <>Cada plataforma tem sua força: <strong>redes sociais para engajamento</strong>, <strong>sites para credibilidade</strong>. Conteúdos com <strong>fotos, vídeos curtos e depoimentos</strong> são essenciais.</>,
+      <>Essa estratégia fortalece a <strong>conexão entre escola e comunidade</strong> e a iniciativa do projeto.</>,
     ],
   },
   {
@@ -62,9 +62,9 @@ const possibilidades = [
     label: "Apresentação Oral ou Dramatizada",
     titleColor: "text-rose-700 dark:text-rose-400",
     content: [
-      "Pode envolver teatro, roda de conversa, contação de histórias, entrevistas simuladas e outros formatos que colocam os estudantes como protagonistas.",
-      "Desenvolve comunicação, confiança, criatividade e colaboração.",
-      "Cria experiências memoráveis que conectam emocionalmente o público ao conhecimento construído.",
+      <>Pode envolver <strong>teatro, roda de conversa, contação de histórias e entrevistas simuladas</strong> e outros formatos que colocam os estudantes como <strong>protagonistas</strong>.</>,
+      <>Desenvolve <strong>comunicação, confiança, criatividade e colaboração</strong>.</>,
+      <>Cria <strong>experiências memoráveis</strong> que conectam emocionalmente o público ao <strong>conhecimento construído</strong>.</>,
     ],
   },
   {
@@ -74,8 +74,8 @@ const possibilidades = [
     label: "Publicação em Ambientes Virtuais",
     titleColor: "text-cyan-700 dark:text-cyan-400",
     content: [
-      "Como Padlet, blog da turma ou redes sociais da escola, com registros escritos, visuais ou sonoros.",
-      "Esses ambientes permitem documentação colaborativa e interativa, com espaço para fotos, vídeos, textos e links.",
+      <>Como <strong>Padlet, blog da turma ou redes sociais da escola</strong>, com registros escritos, visuais ou sonoros.</>,
+      <>Esses ambientes permitem <strong>documentação colaborativa e interativa</strong>, com espaço para <strong>fotos, vídeos, textos e links</strong>.</>,
     ],
   },
   {
@@ -85,8 +85,8 @@ const possibilidades = [
     label: "Apresentações na Própria Sala",
     titleColor: "text-indigo-700 dark:text-indigo-400",
     content: [
-      "Os grupos apresentam suas produções para os colegas, explicando escolhas e descobertas.",
-      "Desenvolve escuta ativa, reflexão, comunicação e respeito entre pares.",
+      <>Os grupos apresentam suas <strong>produções</strong> para os colegas, explicando <strong>escolhas e descobertas</strong>.</>,
+      <>Desenvolve <strong>escuta ativa, reflexão, comunicação e respeito</strong> entre pares.</>,
     ],
   },
   {
@@ -96,8 +96,8 @@ const possibilidades = [
     label: "Mural Coletivo",
     titleColor: "text-amber-700 dark:text-amber-400",
     content: [
-      "Com cartazes, fotos, frases, produções textuais e gráficos, o mural conta a trajetória do projeto.",
-      "Torna o processo visível para toda a escola e funciona como registro permanente.",
+      <>Com <strong>cartazes, fotos, frases, produções textuais e gráficos</strong>, o mural conta a <strong>trajetória do projeto</strong>.</>,
+      <>Torna o processo <strong>visível para toda a escola</strong> e funciona como <strong>registro permanente</strong>.</>,
     ],
   },
   {
@@ -107,8 +107,8 @@ const possibilidades = [
     label: "Produção Final Individual ou em Grupo",
     titleColor: "text-green-700 dark:text-green-400",
     content: [
-      "Pode ser texto, carta aberta, cartaz, vídeo, tirinha... O importante é representar a aprendizagem vivida.",
-      "Permite expressão pessoal e consolida o conhecimento.",
+      <>Pode ser <strong>texto, carta aberta, cartaz, vídeo, tirinha</strong>... O importante é representar a <strong>aprendizagem vivida</strong>.</>,
+      <>Permite <strong>expressão pessoal</strong> e consolida o conhecimento.</>,
     ],
   },
   {
@@ -118,8 +118,8 @@ const possibilidades = [
     label: "Roda de Conversa de Fechamento",
     titleColor: "text-teal-700 dark:text-teal-400",
     content: [
-      "Uma roda simples já pode funcionar como culminância: os alunos compartilham o que foi marcante e o que aprenderam.",
-      "Desenvolve empatia, escuta ativa e reflexão profunda.",
+      <>Uma roda simples já pode funcionar como culminância: os alunos compartilham o que foi <strong>marcante</strong> e o que <strong>aprenderam</strong>.</>,
+      <>Desenvolve <strong>empatia, escuta ativa e reflexão profunda</strong>.</>,
     ],
   },
 ];
