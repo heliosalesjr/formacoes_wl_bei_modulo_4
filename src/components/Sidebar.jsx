@@ -6,23 +6,50 @@ import { useSidebar } from '@/contexts/SidebarContext';
 const navigation = {
   'Módulo 4': {
     path: '/',
-    components: []
+    components: [
+      { id: 'apresentacao-1',   title: 'Introdução ao Módulo' },
+      { id: 'monitorar-avaliar', title: 'Monitorar e Avaliar' },
+      { id: 'onde-estamos',     title: 'Onde Estamos' },
+      { id: 'ao-final',         title: 'Ao Final do Projeto' },
+    ]
   },
   'Métodos Avaliativos': {
     path: '/metodosavaliativos',
-    components: []
+    components: [
+      { id: 'ma-intro',                  title: 'Introdução' },
+      { id: 'ma-reflex',                 title: 'Reflexão' },
+      { id: 'rubrica',                   title: 'Rubrica de Avaliação' },
+      { id: 'ma-porque',                 title: 'Por que Avaliar?' },
+      { id: 'habilidades-autoavaliacao', title: 'Habilidades' },
+      { id: 'ma-aplicacao',              title: 'Aplicação Prática' },
+      { id: 'planejamento-autoavaliacao', title: 'Planejamento' },
+      { id: 'ma-av-pares',              title: 'Avaliação entre Pares' },
+    ]
   },
   'Culminância': {
     path: '/culminancia',
-    components: []
+    components: [
+      { id: 'avaliacao-intro',     title: 'Introdução' },
+      { id: 'culminancia-como',    title: 'Como Realizar' },
+      { id: 'exemplos-praticos',   title: 'Exemplos Práticos' },
+      { id: 'culminancia-exemplos', title: 'Possibilidades' },
+    ]
   },
   'Registros': {
     path: '/registros',
-    components: []
+    components: [
+      { id: 'registros-avaliacao', title: 'Registros de Avaliação' },
+      { id: 'depois-culminancia',  title: 'Após a Culminância' },
+    ]
   },
   'Encerramento': {
     path: '/encerramento',
-    components: []
+    components: [
+      { id: 'encerramento-intro',    title: 'Finalizando o Módulo' },
+      { id: 'encerramento-aprendi',  title: 'O que Aprendi' },
+      { id: 'encerramento-quiz',     title: 'Quiz Final' },
+      { id: 'encerramento-obrigado', title: 'Parabéns!' },
+    ]
   },
 };
 
