@@ -1,9 +1,10 @@
 "use client";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSidebar } from '@/contexts/SidebarContext';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Image from 'next/image';
 import { titleFont } from '@/lib/fonts';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 
 const exemplos = [
   {
@@ -141,9 +142,25 @@ const exemplos = [
   },
 ];
 
+const contentVariants = {
+  open: {
+    height: 'auto',
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] },
+  },
+  closed: {
+    height: 0,
+    opacity: 0,
+    transition: { duration: 0.35, ease: [0.04, 0.62, 0.23, 0.98] },
+  },
+};
+
 const CulmExemplos = () => {
   const ref = useRef();
   const { markAsViewed } = useSidebar();
+  const [openItem, setOpenItem] = useState(null);
+
+  const toggle = (value) => setOpenItem(prev => prev === value ? null : value);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -165,67 +182,99 @@ const CulmExemplos = () => {
         </h2>
       </div>
 
-      <Accordion type="single" collapsible className="w-full space-y-3">
-        {exemplos.map(({ value, num, numBg, title, titleColor, img, intro, bullets, bulletColor, bulletBg, extraText, reflexBg, reflexTitle, subBorder, subTitle, subetapas, quoteColor, quoteBg, quote }) => (
-          <AccordionItem key={value} value={value} className="bg-white dark:bg-slate-800 rounded-xl shadow border border-slate-200 dark:border-slate-700 overflow-hidden">
-            <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
-              <div className="flex items-center gap-4">
-                <div className={`w-8 h-8 ${numBg} text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0`}>{num}</div>
-                <span className={`${titleFont.className} text-lg font-bold ${titleColor}`}>{title}</span>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="px-6 pb-6 space-y-5">
+      <div className="w-full space-y-3">
+        {exemplos.map(({ value, num, numBg, title, titleColor, img, intro, bullets, bulletColor, bulletBg, extraText, reflexBg, reflexTitle, subBorder, subTitle, subetapas, quoteColor, quoteBg, quote }) => {
+          const isOpen = openItem === value;
+          return (
+            <div key={value} className="bg-white dark:bg-slate-800 rounded-xl shadow border border-slate-200 dark:border-slate-700 overflow-hidden">
 
-              <div className="relative w-full h-48 rounded-xl overflow-hidden shadow">
-                <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
-              </div>
+              {/* Trigger */}
+              <button
+                onClick={() => toggle(value)}
+                className="w-full px-6 py-4 flex items-center justify-between gap-4 text-left hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors duration-200"
+              >
+                <div className="flex items-center gap-4">
+                  <div className={`w-8 h-8 ${numBg} text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0`}>{num}</div>
+                  <span className={`${titleFont.className} text-lg font-bold ${titleColor}`}>{title}</span>
+                </div>
+                <motion.div
+                  animate={{ rotate: isOpen ? 180 : 0 }}
+                  transition={{ duration: 0.35, ease: [0.04, 0.62, 0.23, 0.98] }}
+                  className="flex-shrink-0 text-slate-400 dark:text-slate-500"
+                >
+                  <ChevronDown className="w-5 h-5" />
+                </motion.div>
+              </button>
 
-              <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{intro}</p>
+              {/* Animated content */}
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="content"
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    variants={contentVariants}
+                    style={{ overflow: 'hidden' }}
+                  >
+                    <div className="px-6 pb-6 space-y-5 pt-1">
 
-              <div className={`rounded-xl p-4 border space-y-2 ${bulletBg}`}>
-                {bullets.map((b) => (
-                  <div key={b} className="flex items-start gap-2">
-                    <span className={`font-bold mt-0.5 ${bulletColor}`}>•</span>
-                    <p className="text-slate-700 dark:text-slate-300">{b}</p>
-                  </div>
-                ))}
-              </div>
+                      <div className="relative w-full h-96 rounded-xl overflow-hidden shadow">
+                        <Image src={img} alt={title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
+                      </div>
 
-              {extraText && <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{extraText}</p>}
+                      <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{intro}</p>
 
-              {subetapas && (
-                <div className={`rounded-xl border p-5 space-y-4 ${reflexBg}`}>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl">🔎</span>
-                    <h4 className={`font-bold ${reflexTitle}`}>Etapa reflexiva posterior:</h4>
-                  </div>
-                  <div className="space-y-3">
-                    {subetapas.map((s, i) => (
-                      <div key={i} className={`bg-white dark:bg-slate-900/60 rounded-xl p-4 border ${subBorder}`}>
-                        {s.titulo && <h5 className={`font-semibold mb-2 ${subTitle}`}>{s.titulo}</h5>}
-                        {s.intro && <p className="text-slate-700 dark:text-slate-300 text-sm mb-2">{s.intro}</p>}
-                        {s.perguntas && (
-                          <div className="space-y-1">
-                            {s.perguntas.map((p) => (
-                              <p key={p} className="text-slate-700 dark:text-slate-300 text-sm">{p}</p>
+                      <div className={`rounded-xl p-4 border space-y-2 ${bulletBg}`}>
+                        {bullets.map((b) => (
+                          <div key={b} className="flex items-start gap-2">
+                            <span className={`font-bold mt-0.5 ${bulletColor}`}>•</span>
+                            <p className="text-slate-700 dark:text-slate-300">{b}</p>
+                          </div>
+                        ))}
+                      </div>
+
+                      {extraText && <p className="text-slate-700 dark:text-slate-300 leading-relaxed">{extraText}</p>}
+
+                      {subetapas && (
+                        <div className={`rounded-xl border p-5 space-y-4 ${reflexBg}`}>
+                          <div className="flex items-center gap-2">
+                            <span className="text-xl">🔎</span>
+                            <h4 className={`font-bold ${reflexTitle}`}>Etapa reflexiva posterior:</h4>
+                          </div>
+                          <div className="space-y-3">
+                            {subetapas.map((s, i) => (
+                              <div key={i} className={`bg-white dark:bg-slate-900/60 rounded-xl p-4 border ${subBorder}`}>
+                                {s.titulo && <h5 className={`font-semibold mb-2 ${subTitle}`}>{s.titulo}</h5>}
+                                {s.intro && <p className="text-slate-700 dark:text-slate-300 text-sm mb-2">{s.intro}</p>}
+                                {s.perguntas && (
+                                  <div className="space-y-1">
+                                    {s.perguntas.map((p) => (
+                                      <p key={p} className="text-slate-700 dark:text-slate-300 text-sm">{p}</p>
+                                    ))}
+                                  </div>
+                                )}
+                                {s.texto && <p className="text-slate-700 dark:text-slate-300 text-sm">{s.texto}</p>}
+                                {s.nota && <p className="text-slate-600 dark:text-slate-400 text-sm mt-2 italic">{s.nota}</p>}
+                              </div>
                             ))}
                           </div>
-                        )}
-                        {s.texto && <p className="text-slate-700 dark:text-slate-300 text-sm">{s.texto}</p>}
-                        {s.nota && <p className="text-slate-600 dark:text-slate-400 text-sm mt-2 italic">{s.nota}</p>}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+                        </div>
+                      )}
 
-              <blockquote className={`border-l-4 ${quoteColor} pl-5 italic text-slate-600 dark:text-slate-400 ${quoteBg} rounded-r-xl p-4`}>
-                <strong className="dark:text-slate-200">Ponto forte:</strong> {quote}
-              </blockquote>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+                      <blockquote className={`border-l-4 ${quoteColor} pl-5 italic text-slate-600 dark:text-slate-400 ${quoteBg} rounded-r-xl p-4`}>
+                        <strong className="dark:text-slate-200">Ponto forte:</strong> {quote}
+                      </blockquote>
+
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
