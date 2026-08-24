@@ -12,7 +12,7 @@ export default function Modulo4() {
       <main>
         <HeroBento
           eyebrow="Curso de Formação"
-          title="Módulo 4"
+          title="Coleção Aprendendo a Lidar com Dinheiro"
           tag="Módulo 4"
           subtitle="Avaliação dos Resultados e Culminância do Projeto"
         />
