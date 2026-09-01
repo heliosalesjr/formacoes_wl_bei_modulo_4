@@ -66,7 +66,16 @@ const MARubrica = () => {
                 <p className="text-lg leading-relaxed">
                   Antes de entrarmos na{' '}
                   <strong className="bg-white/90 text-blue-800 px-1.5 py-0.5 rounded mx-0.5">autoavaliação</strong>,
-                  vale retomar uma ferramenta apresentada no módulo anterior: a rubrica.{' '}
+                  vale retomar uma ferramenta{' '}
+                  <a
+                    href="https://formacoes-wl-bei-modulo-3.vercel.app/avaliacao"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-blue-200"
+                  >
+                    apresentada no módulo anterior
+                  </a>
+                  : a rubrica.{' '}
                   <strong className="bg-white/90 text-blue-800 px-1.5 py-0.5 rounded mx-0.5">
                     A rubrica é uma tabela com critérios claros que descreve o que se espera
                   </strong>{' '}

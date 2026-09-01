@@ -27,7 +27,16 @@ const MetAvaIntro = () => {
           Autoavaliação e Avaliação entre Pares como processos reflexivos
         </h2>
         <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed max-w-3xl mx-auto">
-          Nos módulos anteriores, já discutimos os <strong>três tipos principais de avaliação</strong>: <strong>diagnóstica, formativa e somativa</strong>.
+          Nos módulos anteriores, já discutimos os{' '}
+          <a
+            href="https://formacoes-wl-bei-modulo-3.vercel.app/metodosavaliativos#tipos-avaliacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 dark:text-blue-400 underline hover:text-blue-900 dark:hover:text-blue-300"
+          >
+            <strong>três tipos principais de avaliação</strong>: <strong>diagnóstica, formativa e somativa</strong>
+          </a>
+          .
         </p>
       </div>
 

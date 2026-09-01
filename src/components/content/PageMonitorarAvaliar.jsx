@@ -22,7 +22,7 @@ const PageMonitorarAvaliar = () => {
     <div ref={ref} id="monitorar-avaliar" className="scroll-mt-20 p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl mx-auto max-w-5xl space-y-8">
 
       <h2 className={`${titleFont.className} text-4xl font-bold text-center text-slate-600 dark:bg-none dark:text-white`}>
-        Concluir e Apresentar
+        Avaliação Reflexiva
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -34,7 +34,7 @@ const PageMonitorarAvaliar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h3 className="font-bold text-blue-800 dark:text-blue-300 text-lg">Métodos Avaliativos</h3>
+            <h3 className="font-bold text-blue-800 dark:text-blue-300 text-lg">Autoavaliação e Avaliação em pares</h3>
           </div>
           <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
             Compreender a importância de autoavaliar e avaliar os colegas
