@@ -70,20 +70,6 @@ const MAPorQue = () => {
         </div>
       </div>
 
-      {/* Relevância profissional */}
-      <div className="bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 dark:from-slate-800 dark:via-slate-800 dark:to-slate-800 rounded-2xl border border-indigo-200 dark:border-slate-700 p-8 relative overflow-hidden">
-        <div className="flex items-center gap-4 mb-5">
-          <div className="w-1 h-14 bg-gradient-to-b from-indigo-500 to-blue-500 rounded-full flex-shrink-0" />
-          <h3 className={`${titleFont.className} text-xl md:text-2xl font-bold text-indigo-800 dark:text-indigo-300`}>
-            Relevância para a vida profissional
-          </h3>
-        </div>
-        <div className="bg-white dark:bg-slate-900/60 rounded-xl p-6 shadow border border-white/50 dark:border-slate-700">
-          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-            A <strong>autoavaliação</strong>, além de ser uma ferramenta importante durante a vida escolar, tem um papel ainda mais relevante quando pensamos no futuro <strong>profissional</strong> dos estudantes. No <strong>ambiente de trabalho</strong>, é comum que as pessoas precisem <strong>revisar suas próprias entregas</strong>, identificar <strong>pontos de melhoria</strong> e buscar formas de se <strong>desenvolver</strong> sem depender exclusivamente do olhar de um gestor. Por isso, ao propor momentos de <strong>reflexão</strong> em sala de aula, o professor contribui para a formação de um <strong>hábito</strong> que será essencial ao longo da vida.
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

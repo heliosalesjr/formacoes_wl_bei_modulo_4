@@ -9,6 +9,7 @@ import MAHabilidades from "@/components/content/MAHabilidades"
 import MAApplicacao from "@/components/content/MAAplicacao"
 import MAPlanejamento from "@/components/content/MAPlanejamento"
 import MAAvPares from "@/components/content/MAAVPares"
+import MARelevanciaProfissional from "@/components/content/MARelevanciaProfissional"
 
 export default function MetodosAvaliativosContentSection() {
   return (
@@ -42,6 +43,10 @@ export default function MetodosAvaliativosContentSection() {
               
             <FadeInWhenVisible>
               <MAAvPares />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+              <MARelevanciaProfissional />
             </FadeInWhenVisible>
           <div className="flex justify-center mt-8">
             <Button asChild size="lg">

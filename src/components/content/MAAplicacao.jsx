@@ -132,6 +132,20 @@ const MAApplicacao = () => {
             </p>
           </AccordionContent>
         </AccordionItem>
+
+        <AccordionItem value="item-5" className="bg-white dark:bg-slate-800 rounded-xl shadow border border-slate-200 dark:border-slate-700 overflow-hidden">
+          <AccordionTrigger className="px-6 py-4 text-left hover:no-underline dark:text-slate-100">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">5</div>
+              <span className={`${titleFont.className} text-lg font-bold text-pink-700 dark:text-pink-400`}>Para Refletir</span>
+            </div>
+          </AccordionTrigger>
+          <AccordionContent className="px-6 pb-6 space-y-4">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
+              E você? Ao longo de seus estudos e sua carreira, cremos que já realizou ou participou de momentos de culminância que foram significativos, mesmo que não tivessem esse nome. Que tal relembrar esses momentos, pensar em o que funcionou bem, o que você acha que poderia ser melhor, e assim se inspirar para organizar o momento com a turma que trabalha atualmente?
+            </p>
+          </AccordionContent>
+        </AccordionItem>
       </Accordion>
 
       {/* Rodapé */}

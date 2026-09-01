@@ -24,6 +24,7 @@ const navigation = {
       { id: 'ma-aplicacao',              title: 'Aplicação Prática' },
       { id: 'planejamento-autoavaliacao', title: 'Planejamento' },
       { id: 'ma-av-pares',              title: 'Avaliação entre Pares' },
+      { id: 'ma-relevancia-profissional', title: 'Relevância Profissional' },
     ]
   },
   'Culminância': {
