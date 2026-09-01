@@ -71,7 +71,7 @@ export default function EncerramentoAdeus() {
       {/* Seção com Cards das Etapas */}
       <div className="space-y-8">
         <h3 className={`${titleFont.className} text-2xl md:text-3xl font-bold text-slate-800 dark:text-white text-center`}>
-          Etapas
+          Percurso
         </h3>
 
         <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto">

@@ -70,7 +70,34 @@ const RegistroAvaliacao = () => {
       {/* Parágrafo 1 + lista */}
       <div className="bg-white dark:bg-slate-800 rounded-xl shadow border border-slate-200 dark:border-slate-700 p-6 space-y-4">
         <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-          Ao longo do desenvolvimento do projeto, é crucial que o(a) professor(a) mantenha <strong>registros do percurso vivido pelos estudantes</strong> — não apenas dos resultados finais, mas especialmente dos processos, dos avanços e dos desafios enfrentados ao longo do caminho. Esses registros não precisam ser formais ou burocráticos: podem ser feitos por meio de:
+          Ao longo do desenvolvimento do projeto, é crucial que o(a) professor(a) mantenha <strong>registros do percurso vivido pelos estudantes</strong> — não apenas dos resultados finais, mas especialmente dos processos, dos avanços e dos desafios enfrentados ao longo do caminho. Relembre alguns tópicos abordados:{' '}
+          <a
+            href="https://formacoes-wl-bei-modulo-3.vercel.app/avaliacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 dark:text-blue-400 underline hover:text-blue-900 dark:hover:text-blue-300 font-medium"
+          >
+            Registros
+          </a>
+          ,{' '}
+          <a
+            href="https://formacoes-wl-bei.vercel.app/material#mat-5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 dark:text-blue-400 underline hover:text-blue-900 dark:hover:text-blue-300 font-medium"
+          >
+            diário de bordo
+          </a>{' '}
+          e{' '}
+          <a
+            href="https://formacoes-wl-bei.vercel.app/material#mat-6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 dark:text-blue-400 underline hover:text-blue-900 dark:hover:text-blue-300 font-medium"
+          >
+            padlet
+          </a>
+          . Esses registros não precisam ser formais ou burocráticos: podem ser feitos por meio de:
         </p>
         <div className="bg-blue-50 dark:bg-blue-950/40 rounded-xl p-5 border border-blue-100 dark:border-blue-800">
           <div className="grid md:grid-cols-2 gap-3">
