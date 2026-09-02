@@ -128,7 +128,7 @@ export default function EncerramentoQuiz() {
       ([entry]) => {
         if (entry.isIntersecting) markAsViewed("encerramento-quiz");
       },
-      { threshold: 0.5 }
+      { threshold: 0.15 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
