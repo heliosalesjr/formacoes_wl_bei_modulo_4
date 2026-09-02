@@ -44,7 +44,7 @@ const MAAvPares = () => {
       ([entry]) => {
         if (entry.isIntersecting) markAsViewed('ma-av-pares');
       },
-      { threshold: 0.5 }
+      { threshold: 0.15 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();

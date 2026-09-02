@@ -7,22 +7,22 @@ const navigation = {
   'Módulo 4': {
     path: '/',
     components: [
-      { id: 'apresentacao-1',   title: 'Introdução ao Módulo' },
+      { id: 'apresentacao-1',   title: 'Vídeo de Apresentação' },
       { id: 'monitorar-avaliar', title: 'Monitorar e Avaliar' },
-      { id: 'onde-estamos',     title: 'Onde Estamos' },
+      { id: 'onde-estamos',     title: 'Onde Estamos no Projeto' },
       { id: 'ao-final',         title: 'Ao Final do Projeto' },
     ]
   },
   'Métodos Avaliativos': {
     path: '/metodosavaliativos',
     components: [
-      { id: 'ma-intro',                  title: 'Introdução' },
-      { id: 'ma-reflex',                 title: 'Reflexão' },
+      { id: 'ma-intro',                  title: 'Autoavaliação e Pares' },
+      { id: 'ma-reflex',                 title: 'Envolvimento dos Estudantes' },
       { id: 'rubrica',                   title: 'Rubrica de Avaliação' },
-      { id: 'ma-porque',                 title: 'Por que Avaliar?' },
-      { id: 'habilidades-autoavaliacao', title: 'Habilidades' },
-      { id: 'ma-aplicacao',              title: 'Aplicação Prática' },
-      { id: 'planejamento-autoavaliacao', title: 'Planejamento' },
+      { id: 'ma-porque',                 title: 'Por que Autoavaliar?' },
+      { id: 'habilidades-autoavaliacao', title: 'Habilidades Desenvolvidas' },
+      { id: 'ma-aplicacao',              title: 'Como Aplicar a Autoavaliação' },
+      { id: 'planejamento-autoavaliacao', title: 'Planejando a Autoavaliação' },
       { id: 'ma-av-pares',              title: 'Avaliação entre Pares' },
       { id: 'ma-relevancia-profissional', title: 'Relevância Profissional' },
     ]
@@ -30,7 +30,7 @@ const navigation = {
   'Culminância': {
     path: '/culminancia',
     components: [
-      { id: 'avaliacao-intro',     title: 'Introdução' },
+      { id: 'avaliacao-intro',     title: 'O que é Culminância' },
       { id: 'culminancia-como',    title: 'Como Realizar' },
       { id: 'exemplos-praticos',   title: 'Exemplos Práticos' },
       { id: 'culminancia-exemplos', title: 'Possibilidades' },
